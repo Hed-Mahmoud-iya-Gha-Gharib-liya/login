@@ -13,7 +13,7 @@ jobs:
     steps:
     # 1. استنساخ الكود من الـ repository
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     
     # 2. تثبيت Flutter
     - name: Setup Flutter
@@ -62,7 +62,7 @@ jobs:
     
     # 10. رفع الـ APK كـ artifact
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: release-apk
         path: login/build/app/outputs/flutter-apk/app-release.apk
